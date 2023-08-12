@@ -4,6 +4,7 @@ const express = require('express');
 const hbars = require('express-handlebars');
 const bp = require('body-parser');
 const db = require('./config/dbConn');
+const routes = require('./routes/inventory')
 
 //test connection
 db.authenticate()
@@ -14,8 +15,7 @@ const app = express();
 
 app.get('/', (req, res) => res.send('INDEX TEST TEXT'));
 
-//Inv routes
-app.use('/inv', require('./routes/inventory'));
+app.use(routes);
 
 const PORT = process.env.APP_PORT;
 

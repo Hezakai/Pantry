@@ -1,16 +1,26 @@
-const Sequelize = require('sequelize')
-const db = require('../config/dbConn')
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/dbConn");
 
-const Inventory = db.define('inv', {
-    name: {
-        type: Sequelize.STRING
-    },
-    amount: {
-        type: Sequelize.FLOAT
-    },
-    unit: {
-        type: Sequelize.STRING
-    },
-})
+class Inventory extends Model {}
+
+Inventory.init({
+  name: {
+    type: DataTypes.STRING,
+  },
+  amount: {
+    type: DataTypes.FLOAT,
+  },
+  unit: {
+    type: DataTypes.STRING,
+  },
+},
+{
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'inventory'
+  }
+  );
 
 module.exports = Inventory;

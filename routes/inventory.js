@@ -1,20 +1,13 @@
-const express = require('express');
-const router = express.Router();
-const dv = require('../config/dbConn');
-const Inv = require('../models/Inventory')
+const router = require('express').Router();
+const Inventory = require('../models/Inventory')
 
-router.get('/', (req, res) => {
-    Inv.findAll().then((invData) => {
+//gets all inventory items
+router.get('/inv', (req, res) => {
+    Inventory.findAll().then((invData) => {
         res.json(invData);
     });
 });
 
 
-// Inv.findAll()
-//     .then(inv => {
-//         console.log(inv);
-//         res.sendStatus(200);
-//     })
-//     .catch(err => console.log(err)));
 
 module.exports = router;
