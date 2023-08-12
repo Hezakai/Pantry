@@ -6,7 +6,7 @@ const Inventory = db.define('inv', {
         type: Sequelize.STRING
     },
     amount: {
-        type: Sequelize.INTEGER
+        type: Sequelize.FLOAT
     },
     unit: {
         type: Sequelize.STRING
