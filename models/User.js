@@ -1,4 +1,4 @@
-//This code defines a Sequelize model for a user with attributes like name, email, and hashed password. It ensures that the password is securely hashed before being stored in the database and provides a method to check the validity of a provided password against the stored hash.
+//This file defines a Sequelize model for a user with attributes like name, email, and hashed password. It ensures that the password is securely hashed before being stored in the database and provides a method to check the validity of a provided password against the stored hash.
 
 
 //Dependency imports 

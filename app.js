@@ -4,7 +4,7 @@ const express = require('express');
 const hbars = require('express-handlebars');
 const bp = require('body-parser');
 const db = require('./config/dbConn');
-const routes = require('./routes/inventory')
+const routes = require('./routes/inventory');
 
 //test connection
 db.authenticate()
