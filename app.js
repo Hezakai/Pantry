@@ -4,7 +4,7 @@ const express = require('express');
 const hbars = require('express-handlebars');
 const bp = require('body-parser');
 const db = require('./config/dbConn');
-const routes = require('./routes/inventory');
+const routes = require('./controllers/index');
 
 //test connection
 db.authenticate()
@@ -12,6 +12,8 @@ db.authenticate()
     .catch(err => console.log('Error: ' + err))
 
 const app = express();
+app.use(bp.json());
+app.use(bp.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => res.send('INDEX TEST TEXT'));
 
