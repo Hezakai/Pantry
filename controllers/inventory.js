@@ -25,5 +25,42 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.delete('/:name', async (req, res) => {
+    try {
+        const invData = await Inventory.destroy({
+            where: {
+                name: req.params.name
+            }
+        })
+    
+        if (!invData) {
+            res.status(404).json({ message: 'Ingredient not found'});
+            return;
+        }
+
+        res.status(200).json(invData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.put('/:name', async (req, res) => {
+    try {
+        const invData = await Inventory.update(req.body, {
+            where: {
+                name: req.params.name,
+            },
+        });
+
+        if (!invData) {
+            res.status(404).json({ message: 'Ingredient not found'});
+            return;
+        }
+
+        res.status(200).json(invData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
 module.exports = router;
