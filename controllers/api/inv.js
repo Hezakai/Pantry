@@ -1,16 +1,16 @@
 const router = require('express').Router();
-const { Inventory } = require('../../models')
+const { Inv } = require('../../models')
 
 //gets all inventory items
 router.get('/', (req, res) => {
-    Inventory.findAll().then((invData) => {
+    Inv.findAll().then((invData) => {
         res.json(invData);
     });
 });
 
 router.post('/', async (req, res) => {
     try {
-        const newInvItem = await Inventory.create(
+        const newInvItem = await Inv.create(
             {
                 name: req.body.name,
                 amount: req.body.amount,
@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
 
 router.delete('/:name', async (req, res) => {
     try {
-        const invData = await Inventory.destroy({
+        const invData = await Inv.destroy({
             where: {
                 name: req.params.name
             }
@@ -46,7 +46,7 @@ router.delete('/:name', async (req, res) => {
 
 router.put('/:name', async (req, res) => {
     try {
-        const invData = await Inventory.update(req.body, {
+        const invData = await Inv.update(req.body, {
             where: {
                 name: req.params.name,
             },

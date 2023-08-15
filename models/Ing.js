@@ -1,13 +1,10 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/dbConn");
 
-class Inventory extends Model {}
+class Ing extends Model {}
 
-Inventory.init(
+Ing.init(
   {
-  user_id: {
-    type: DataTypes.INTEGER,
-  },
   recipe_id: {
     type: DataTypes.INTEGER,
   },
@@ -26,8 +23,8 @@ Inventory.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'inventory'
+    modelName: 'ing'
   }
   );
 
-module.exports = Inventory;
+module.exports = Ing;
