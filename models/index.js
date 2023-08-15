@@ -4,6 +4,8 @@
 const User = require('./User');
 const Inv = require('./Inv');
 const Ing = require('./Ing');
+const Rec = require('./Rec');
+
 // Establishes a one-to-many association between the User model and the Inventory model. This means that a single user can be associated with multiple inventory items.
 User.hasMany(Inv, {
    foreignKey: 'user_id', //specifies the foreign key in the Inventory model that refrences the User model.  This means the Inventory model will have a column named user_id that stores the ID of the associated user.
@@ -15,4 +17,4 @@ Inv.belongsTo(User, {
    foreignKey: 'user_id' //Specifies the foreign key in the Project model that references the User model. This matches the foreign key configured in the User.hasMany association.
 });
 
-module.exports = { User, Inv, Ing };
+module.exports = { User, Inv, Ing, Rec };
