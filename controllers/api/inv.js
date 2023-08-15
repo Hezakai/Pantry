@@ -12,6 +12,7 @@ router.post('/', async (req, res) => {
     try {
         const newInvItem = await Inv.create(
             {
+                user_id: req.body.user_id,
                 name: req.body.name,
                 amount: req.body.amount,
                 unit: req.body.unit

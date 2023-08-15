@@ -12,6 +12,7 @@ router.post('/', async (req, res) => {
     try {
         const newIngItem = await Ing.create(
             {
+                rec_id: req.body.rec_id,
                 name: req.body.name,
                 amount: req.body.amount,
                 unit: req.body.unit
