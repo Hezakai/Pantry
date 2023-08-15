@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Inventory, User } = require('../models')
+const { Inventory } = require('../../models')
 
 //gets all inventory items
 router.get('/', (req, res) => {

@@ -3,7 +3,14 @@ const sequelize = require("../config/dbConn");
 
 class Inventory extends Model {}
 
-Inventory.init({
+Inventory.init(
+  {
+  user_id: {
+    type: DataTypes.INTEGER,
+  },
+  recipe_id: {
+    type: DataTypes.INTEGER,
+  },
   name: {
     type: DataTypes.STRING,
   },
