@@ -4,7 +4,7 @@
 //Dependency imports 
 const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
-const sequelize = require("../config/dbConn");
+const sequelize = require("../config/connection");
 
 
 //The class User extends Model line defines a class named User that extends the Model class provided by Sequelize.
