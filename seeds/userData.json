@@ -1,27 +1,28 @@
 [
     {
-        "name": "Charlie Kelly",
-        "email": "charlie@email.com",
-        "pasword": "12346789"
-    },
-    {
         "name": "Mac McDonald",
         "email": "mac@paddyspub.com",
-        "pasword": "12346789"
+        "password": "12345678"
     },
     {
         "name": "Dennis Reynolds",
         "email": "dennis@paddyspub.com",
-        "pasword": "12346789"
+        "password": "12345678"
     },
     {
         "name": "Dee Reynolds",
         "email": "dee@paddyspub.com",
-        "pasword": "12346789"
+        "password": "12345678"
     },
     {
         "name": "Frank Reynolds",
         "email": "frank@paddyspub.com",
-        "pasword": "12346789"
+        "password": "12345678"
+    },
+    {
+        "name": "Charlie Kelly",
+        "email": "charlie@paddyspub.com",
+        "password": "12345678"
     }
+
 ]
