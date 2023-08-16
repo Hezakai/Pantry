@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Inv, Rec, Ing } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -19,19 +19,32 @@ router.get('/profile', withAuth, async (req, res) => {
       // Find the logged in user based on the session ID
       const userData = await User.findByPk(req.session.user_id, {
         attributes: { exclude: ['password'] },
-        include: [{ model: Project }],
+        include: [  // <-- Update here to fetch associated data
+            {
+                model: Inv
+            },
+            {
+                model: Rec,
+                include: {
+                    model: Ing
+                }
+            }
+        ]
       });
   
       const user = userData.get({ plain: true });
+      console.log(user);
   
       res.render('profile', {
-        ...user,
+        user,  // <-- Update here to pass user object instead of spreading
         logged_in: true
       });
     } catch (err) {
+      console.error("Error loading profile: ", err);
       res.status(500).json(err);
-    }
-  });
+  }
+  
+});
 
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route

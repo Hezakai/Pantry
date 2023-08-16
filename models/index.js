@@ -12,9 +12,27 @@ User.hasMany(Inv, {
    onDelete: 'CASCADE' //When a user is deleted, all associated inventories will also be deleted.
 });
 
+User.hasMany(Rec, {
+   foreignKey: 'user_id',
+   onDelete: 'CASCADE' // When a user is deleted, all associated recipes will also be deleted.
+});
+
 // Establishes a corresponding association from the Inventory model to the User model. This defines that each inventory belongs to a single user.
 Inv.belongsTo(User, {
    foreignKey: 'user_id' //Specifies the foreign key in the Project model that references the User model. This matches the foreign key configured in the User.hasMany association.
 });
+
+Rec.belongsTo(User, {
+   foreignKey: 'user_id'
+});
+
+Rec.hasMany(Ing, {
+   foreignKey: 'rec_id',
+   onDelete: 'CASCADE'
+ });
+ 
+ Ing.belongsTo(Rec, {
+   foreignKey: 'rec_id'
+ });
 
 module.exports = { User, Inv, Ing, Rec };
