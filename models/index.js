@@ -5,6 +5,7 @@ const User = require('./User');
 const Inv = require('./Inv');
 const Ing = require('./Ing');
 const Rec = require('./Rec');
+const Step = require('./Step');
 
 // Establishes a one-to-many association between the User model and the Inventory model. This means that a single user can be associated with multiple inventory items.
 User.hasMany(Inv, {
@@ -30,9 +31,19 @@ Rec.hasMany(Ing, {
    foreignKey: 'rec_id',
    onDelete: 'CASCADE'
  });
+
+ Rec.hasMany(Step, {
+   foreignKey: 'rec_id',
+   onDelete: 'CASCADE'
+ });
  
  Ing.belongsTo(Rec, {
    foreignKey: 'rec_id'
  });
 
-module.exports = { User, Inv, Ing, Rec };
+ Step.belongsTo(Rec, {
+   foreignKey: 'rec_id'
+ });
+
+
+module.exports = { User, Inv, Ing, Rec, Step };

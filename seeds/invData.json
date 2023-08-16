@@ -1,22 +1,32 @@
 [
     {
-        "name": "Ground Beef",
-        "amount": 2,
-        "unit": "lbs"
-    },
-    {
-        "name": "Chicken Breast",
-        "amount": 3,
-        "unit": "lbs"
+        "name": "Ribeye",
+        "amount": 1,
+        "unit": ""
     },
     {
         "name": "Milk",
-        "amount": 1,
-        "unit": "gallon"
+        "amount": 6,
+        "unit": "gallons"
     },
     {
-        "name": "Chicken Stock",
-        "amount": 1.5,
-        "unit": "cup"
-    }    
+        "name": "Jelly Beans",
+        "amount": 2,
+        "unit": "fist full"
+    },
+    {
+        "name": "Crow Eggs",
+        "amount": 8,
+        "unit": ""
+    },
+    {
+        "name": "Grain Alcohol",
+        "amount": 8,
+        "unit": "gallons"
+    },
+    {
+        "name": "Punch",
+        "amount": 2,
+        "unit": "cups"
+    } 
 ]

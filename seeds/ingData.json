@@ -1,0 +1,23 @@
+[
+    {
+        "rec_id": 1,
+        "name": "Ribeye",
+        "amount": 1,
+        "unit": ""
+
+    },
+    {
+        "rec_id": 1,
+        "name": "Milk",
+        "amount": 1,
+        "unit": "gallon"
+
+    },
+    {
+        "rec_id": 1,
+        "name": "Jelly Beans",
+        "amount": 1,
+        "unit": "fist full"
+
+    }
+]
