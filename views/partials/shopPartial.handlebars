@@ -1,3 +1,13 @@
-{{#each this}}
-    <p>{{name}}: {{amount}} {{unit}}</p>
-{{/each}}
+<div class="card">
+    <div class="card-header">
+        Shopping List
+    </div>
+    <div class="card-body">
+        <select id="recipe-dropdown">
+            {{#each user.recs}}
+            <option value="{{this.id}}">{{this.rec_name}}</option>
+            {{/each}}
+        </select>
+        <button id="addToShoppingList">Add to Shopping List</button>
+    </div>
+</div>

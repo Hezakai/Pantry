@@ -37,7 +37,7 @@ router.get('/profile', withAuth, async (req, res) => {
       console.log(user);
   
       res.render('profile', {
-        user,  // <-- Update here to pass user object instead of spreading
+        user,
         logged_in: true
       });
     } catch (err) {

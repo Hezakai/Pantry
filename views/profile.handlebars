@@ -5,15 +5,7 @@
 </div>
 {{> invPartial}}
 {{> recPartial}}
+{{> shopPartial}}
 
-<select id="recipe-dropdown">
-    {{#each recipes}}
-        <option value="{{this.id}}">{{this.rec_name}}</option>
-    {{/each}}
-</select>
-<button id="addToShoppingList">Add to Shopping List</button>
-<div id="shoppingList">
-    {{> shopPartial shoppingListItems}}
-</div>
 
-<script src="./js/profile.js"></script>
+<script src="/js/profile.js"></script>
