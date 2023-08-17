@@ -1,28 +1,7 @@
 [
     {
-        "name": "Mac McDonald",
-        "email": "mac@paddyspub.com",
-        "password": "12345678"
-    },
-    {
-        "name": "Dennis Reynolds",
-        "email": "dennis@paddyspub.com",
-        "password": "12345678"
-    },
-    {
-        "name": "Dee Reynolds",
-        "email": "dee@paddyspub.com",
-        "password": "12345678"
-    },
-    {
-        "name": "Frank Reynolds",
-        "email": "frank@paddyspub.com",
-        "password": "12345678"
-    },
-    {
         "name": "Charlie Kelly",
         "email": "charlie@paddyspub.com",
         "password": "12345678"
     }
-
 ]
