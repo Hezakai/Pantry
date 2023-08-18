@@ -1,9 +1,9 @@
 [
     {
         "rec_id": 1,
-        "name": "Ribeye",
+        "name": "Porterhouse",
         "amount": 1,
-        "unit": ""
+        "unit": "each"
 
     },
     {

@@ -5,9 +5,8 @@
     <div class="card-body">
         <ul>
             {{#each user.recs}}
-                <img src="../../uploads/rec_images/{{this.photo}}"></img>
+                <img src="../../uploads/{{this.photo}}" width="200" ></img>
                 <li>{{this.rec_name}}
-                    {{!-- get rid of this after your done --}}
                     <ul> 
                         Ingredients:
                     {{#each this.ings}}

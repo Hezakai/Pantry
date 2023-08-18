@@ -2,6 +2,16 @@
     {
         "user_id": 1,
         "rec_name": "Milk Steak",
-        "photo": "1_milk_steak"
+        "photo": "1_milk_steak.jpeg"
+    },
+    {
+        "user_id": 1,
+        "rec_name": "Rum Ham",
+        "photo": "2_rum_ham.jpeg"
+    },
+    {
+        "user_id": 1,
+        "rec_name": "Riot Juice",
+        "photo": "3_riot_juice.jpeg"
     }
 ]

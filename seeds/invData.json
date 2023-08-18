@@ -1,21 +1,9 @@
 [
     {
         "user_id": "1",
-        "name": "Ribeye",
-        "amount": 1,
-        "unit": ""
-    },
-    {
-        "user_id": "1",
         "name": "Milk",
         "amount": 6,
         "unit": "gallons"
-    },
-    {
-        "user_id": "1",
-        "name": "Jelly Beans",
-        "amount": 2,
-        "unit": "fist full"
     },
     {
         "user_id": "1",
@@ -28,6 +16,12 @@
         "name": "Grain Alcohol",
         "amount": 8,
         "unit": "gallons"
+    },
+    {
+        "user_id": "1",
+        "name": "Jelly Beans",
+        "amount": 2,
+        "unit": "fist full"
     },
     {
         "user_id": "1",

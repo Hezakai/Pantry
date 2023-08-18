@@ -13,5 +13,35 @@
         "rec_id": 1,
         "number": 3,
         "text": "Garnish with a fistful of Jelly Beans."
+    },
+    {
+        "rec_id": 2,
+        "number": 1,
+        "text": "Soak ham in cheap rum."
+    },
+    {
+        "rec_id": 2,
+        "number": 2,
+        "text": "Use Pineapple Slices to make eyes."
+    },
+    {
+        "rec_id": 2,
+        "number": 3,
+        "text": "Eat until fat and drunk."
+    },
+    {
+        "rec_id": 3,
+        "number": 1,
+        "text": "Mix everything into old 1 gallon milk jugs."
+    },
+    {
+        "rec_id": 3,
+        "number": 2,
+        "text": "Consume during pre-game rituals."
+    },
+    {
+        "rec_id": 3,
+        "number": 3,
+        "text": "Forget the World Series."
     }
 ]
